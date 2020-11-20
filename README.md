@@ -2,7 +2,7 @@
 
 ---
 
-## It contains the following componenets:
+> It contains the following componenets:
 
 - [ ] Main Products Page where Dummy Products are shown
 - [ ] Hero Image
