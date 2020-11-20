@@ -20,7 +20,10 @@ const cache = require('gulp-cache');
 const del = require('del');
 // Requires the run-sequence plugin
 const runSequence = require('run-sequence');
+// Requires the gulp-autoprefixer plugin
 const autoPrefixer = require('gulp-autoprefixer');
+// Requires the gulp-plumber plugin
+const plumber = require('gulp-plumber');
 
 // Gulp Syntax
 // gulp.task('task-name', function () {
@@ -42,6 +45,8 @@ gulp.task('sass', function () {
   return (
     gulp
       .src('resources/sass/*.scss')
+      // Handle the errors
+      .pipe(plumber())
       // Using gulp-sass
       // Converts Sass to CSS with gulp-sass
       .pipe(sass())
@@ -59,6 +64,8 @@ gulp.task('useref', function () {
   return (
     gulp
       .src('*/**.html')
+      // Handle the errors
+      .pipe(plumber())
       .pipe(useref())
       // Minifies only if it's a JavaScript file
       .pipe(gulpIf('*.js', uglify()))

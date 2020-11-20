@@ -8,10 +8,11 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <!-- <link rel="stylesheet" href="vendors/js-css__libraries/font-awesome/css/fontawesome.min.css"> -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
 
     <meta property="og:title" content="" />
@@ -20,7 +21,7 @@
     <meta property="og:image" content="" />
 
     <!--build:css css/main.min.css -->
-    <!-- <link rel="stylesheet" href="vendors/js-css__libraries/bootstrap/dist/css/bootstrap.min.css"> -->
+    <script src="vendors/js-css__libraries/modernizr__library/modernizr--custom.js"></script>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
@@ -29,24 +30,125 @@
     />
     <link rel="stylesheet" href="resources/css/style.css" />
     <!-- endbuild -->
-
-    <!-- <script src="vendors/js-css__libraries/modernizr__library/modernizr.js"></script> -->
-    <script src="vendors/js-css__libraries/modernizr__library/modernizr--custom.js"></script>
   </head>
 
   <body>
     <!-- Add your site or application content here -->
+    <!-- main bootstrap container starts here -->
+    <div class="container-fluid px-0">
+      <!-- row one starts here -->
+      <div class="row px-4">
+        <!-- secondary menu ( account | cart etc.. ) -->
+        <ul class="nav mr-auto">
+          <li class="nav-item searchbar">
+            <div class="form-group">
+              <label for="internal__search" class="sr-only">search</label>
+              <input
+                type="search"
+                placeholder="eg. Macbook Pro"
+                class="form-control"
+                id="internal__search"
+                aria-label="search"
+              />
+            </div>
+          </li>
+        </ul>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled">Products</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Your cart</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Checkout</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+        </ul>
+      </div>
+
+      <!-- row one ends here -->
+      <!-- row two starts here ( main navigation bar) -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="navbar-brand mr-auto">
+          <img
+            src="https://via.placeholder.com/50/50.png?text=navbar+brand+logo"
+            alt="site_logo"
+          />
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
+              >Men</a
+            >
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Mens Items</a>
+              <a href="#" class="dropdown-item">Mens Items</a>
+              <a href="#" class="dropdown-item">Mens Items</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
+              >Women</a
+            >
+
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Womens Items</a>
+              <a href="#" class="dropdown-item">Womens Items</a>
+              <a href="#" class="dropdown-item">Womens Items</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
+              >Jewellery</a
+            >
+
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Jewellery Items</a>
+              <a href="#" class="dropdown-item">Jewellery Items</a>
+              <a href="#" class="dropdown-item">Jewellery Items</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
+              >Wallets</a
+            >
+
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Wallets</a>
+              <a href="#" class="dropdown-item">Wallets</a>
+              <a href="#" class="dropdown-item">Wallets</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
+              >Luxury</a
+            >
+
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Luxury Items</a>
+              <a href="#" class="dropdown-item">Luxury Items</a>
+              <a href="#" class="dropdown-item">Luxury Items</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- row two ends here ( main navigation bar) -->
+    </div>
+    <!-- main bootstrap container ends here -->
 
     <!-- build:js js/main.min.js -->
-    <!-- <script src="vendors/js-css__libraries/jquery/dist/jquery.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
-    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-    <!-- <script src="vendors/js-css__libraries/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"
-      integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
 
@@ -55,21 +157,21 @@
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
-      // let ga;
-      // window.ga = function () {
-      //   // eslint-disable-next-line prefer-rest-params
-      //   ga.q.push(arguments);
-      // };
-      // ga.q = [];
-      // ga.l = +new Date();
-      // // prettier-ignore
-      // ga('create', 'UA-XXXXX-Y', 'auto');
-      // // prettier-ignore
-      // ga('set', 'anonymizeIp', true);
-      // // prettier-ignore
-      // ga('set', 'transport', 'beacon');
-      // // prettier-ignore
-      // ga('send', 'pageview');
+      let ga;
+      window.ga = function () {
+        // eslint-disable-next-line prefer-rest-params
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      // prettier-ignore
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      // prettier-ignore
+      ga('set', 'anonymizeIp', true);
+      // prettier-ignore
+      ga('set', 'transport', 'beacon');
+      // prettier-ignore
+      ga('send', 'pageview');
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
