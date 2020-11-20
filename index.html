@@ -8,12 +8,6 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
 
     <meta property="og:title" content="" />
     <meta property="og:type" content="" />
@@ -24,10 +18,15 @@
     <script src="vendors/js-css__libraries/modernizr__library/modernizr--custom.js"></script>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
-      integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="resources/css/style.css" />
     <!-- endbuild -->
   </head>
@@ -133,6 +132,101 @@
     </div>
     <!-- main bootstrap container ends here -->
 
+    <!-- Note: All below content's layout is done with Css Grid!!! -->
+    <main class="grid__container">
+      <img
+        src="https://picsum.photos/id/66/500/500?grayscale"
+        alt="placeholder image as a result of absence of original hero image"
+        class="hero__image"
+      />
+
+      <!-- Manufacturers logos -->
+      <section
+        class="manufacturers d-flex justify-content-around align-items-center flex-wrap"
+      >
+        <!-- manufacturers logo one -->
+        <img
+          src="https://picsum.photos/id/1/50/50"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--one"
+        />
+
+        <!-- manufacturers logo two -->
+        <img
+          src="https://picsum.photos/id/1/50/50"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--two"
+        />
+
+        <!-- manufacturers logo three -->
+        <img
+          src="https://picsum.photos/id/1/50/50"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--three"
+        />
+
+        <!-- manufacturers logo four -->
+        <img
+          src="https://picsum.photos/id/1/50/50"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--four"
+        />
+
+        <!-- manufacturers logo five -->
+        <img
+          src="https://picsum.photos/id/1/50/50"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--five"
+        />
+
+        <!-- manufacturers logo six -->
+        <img
+          src="https://picsum.photos/id/1/50/50"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--six"
+        />
+      </section>
+      <!-- First section of the footer starts here -->
+      <section class="footer__section--one bg-secondary">
+        <section class="footer__section--one--part1 text-white h-75">
+          <div class="lead mt-4">Navigation</div>
+          <ul class="list-unstyled mt-5">
+            <li class="p-1"><a href="#" class="text-white">Products</a></li>
+            <li class="p-1"><a href="#" class="text-white">Your cart</a></li>
+            <li class="p-1"><a href="#" class="text-white">Login</a></li>
+          </ul>
+        </section>
+        <section class="footer__section--one--part2 text-white h-75">
+          <div class="lead mt-4">My Account</div>
+          <ul class="list-unstyled mt-5">
+            <li class="p-1">
+              <a href="#" class="text-white">Order History</a>
+            </li>
+            <li class="p-1"><a href="#" class="text-white">Wish List</a></li>
+            <li class="p-1"><a href="#" class="text-white">Newsletter</a></li>
+          </ul>
+        </section>
+        <section class="footer__section--one--part3 text-white h-75">
+          <div class="lead mt-4">
+            Shopper <i class="fa fa-cart-plus" aria-hidden="true"></i>
+          </div>
+          <p class="text-center mt-5">
+            Shopping is really cool. You can do more shopping with more money.
+            You can buy lot of luxury items if you work hard intelligently and
+            cleverly ( being corrupt is different ) in life.
+          </p>
+        </section>
+      </section>
+      <!-- First section of the footer ends here -->
+      <!-- Second section of the footer starts here -->
+      <section class="footer__section--two bg-dark">
+        <section class="copyright__content text-white">
+          Copyright@2020 Arhan Kamra, Oh Puhleez Digital Marketing Solutions -
+          All rights reserved.
+        </section>
+      </section>
+      <!-- Second section of the footer ends here -->
+    </main>
     <!-- build:js js/main.min.js -->
 
     <script

@@ -2,3 +2,13 @@ html,
 body {
   box-sizing: border-box;
 }
+
+// Setting Grid properties for the main content area including header & footer
+.grid__container {
+  display: grid;
+
+  grid-template-rows: 40vw 100px 20px 300px 20px 300px 200px 20px 100px 20vw 50px;
+  grid-template-columns: repeat(12, 1fr);
+
+  // gap: ;
+}

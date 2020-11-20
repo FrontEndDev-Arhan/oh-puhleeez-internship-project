@@ -585,4 +585,29 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.grid__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40vw 100px 20px 300px 20px 300px 200px 20px 100px 30vw 50px;
+      grid-template-rows: 40vw 100px 20px 300px 20px 300px 200px 20px 100px 30vw 50px;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.hero__image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-area: 1 / 1 / 2 / -1;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+footer {
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 1;
+  grid-area: 11 / 1 / 12 / -1;
+}
 /*# sourceMappingURL=style.css.map */

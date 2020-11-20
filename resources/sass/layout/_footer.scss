@@ -1,0 +1,37 @@
+// Setting Grid properties for upper section of the footer
+.footer__section--one {
+  grid-row: 10 / 11;
+  grid-column: 1 / all;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  &--part1 {
+    @include footer-flex--column;
+  }
+
+  &--part2 {
+    @include footer-flex--column;
+  }
+
+  &--part3 {
+    @include footer-flex--column;
+    width: 33%;
+  }
+}
+
+// Setting Grid properties for lower section of the footer
+.footer__section--two {
+  grid-row: 11 / 12;
+  grid-column: 1 / all;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .copyright__content {
+    max-width: max-content;
+  }
+}

@@ -1,1 +1,8 @@
 // mixins
+@mixin footer-flex--column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+}
