@@ -1,0 +1,36 @@
+// variables
+
+// === colors ===
+$text--color: #555;
+$theme--color: #209;
+$secondary--color: #234;
+$ternary--color: #568;
+$link--color: #841;
+$menu__item--color: #fff;
+
+// === fonts ===
+$text__font: arial, helvetica, sans-serif;
+$headline__font: monospace;
+
+// === sizes ===
+$content--width: 80%;
+$min__content--width: 320px;
+$max__content--width: 1200px;
+$content-height: 2000px;
+$max-content-height: 3000px;
+$header--height: 500px;
+$footer--height: 400px;
+$base--size: 16px;
+$image--width: 200px;
+$min__image--width: 200px;
+$max__image--width: 200px;
+$fill-parent: 100%;
+$box--width: 260px;
+$box--height: 260px;
+
+// === miscelleneous ===
+$header--background: #abd;
+$heading--width: 100%;
+$margin--middle: 0 auto;
+$according-to-content: min-content;
+$as-much-content: max-content;

@@ -1,0 +1,19 @@
+{
+  "name": "fashion__grid-layout",
+  "description": "A static site made with css grid",
+  "main": "index.js",
+  "authors": ["Arhan"],
+  "license": "Apache-2.0",
+  "keywords": ["css", "grid", "html5", "layout", "fashion"],
+  "homepage": "https://",
+  "private": true,
+  "ignore": ["**/.*", "node_modules", "test", "tests"],
+  "devDependencies": {
+    "jquery": "^3.5.1",
+    "bootstrap": "^4.5.3",
+    "bourbon": "^7.0.0",
+    "breakpoint-sass": "^2.7.1",
+    "font-awesome": "^5.15.1",
+    "html5shiv": "^3.7.3"
+  }
+}

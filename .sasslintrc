@@ -1,0 +1,95 @@
+{
+  "options": {
+    "merge-default-rules": false,
+    "formatter": "html",
+    "output-file": "linters/sass-lint.html",
+    "max-warnings": 50
+  },
+  "files": {
+    "include": "sass/**/*.s+(a|c)ss",
+    "ignore": [
+      "sass/vendor/**/*.*"
+    ]
+  },
+  "rules": {
+    "extends-before-mixins": 2,
+    "zero-unit": {
+    "include": false
+  },
+  "variable-name-format": {
+    "allow-leading-underscore": true,
+    "convention": "strictbem",
+    "convention-explanation": true
+  },
+  "trailing-semicolon": {
+    "include": true
+  },
+  "space-between-parens": {
+    "include": true
+  },
+  "space-before-colon": {
+    "include": true
+  },
+  "space-before-bang": {
+    "include": false
+  },
+  "nesting-depth": {
+    "max-depth": 3
+  },
+  "border-zero": {
+    "convention": "none"
+  },
+    "single-line-per-selector": 1,
+    "style": "double",
+    "pseudo-element": 2,
+    "no-empty-rulesets": 0,
+    "no-trailing-whitespace": 1,
+    "url-quotes": 1,
+    "extends-before-declarations": 2,
+    "placeholder-in-extend": 2,
+    "mixins-before-declarations": [
+      2,
+      {
+        "exclude": [
+          "breakpoint",
+          "mq"
+        ]
+      }
+    ],
+    "no-warn": 1,
+    "no-debug": 1,
+    "no-ids": 2,
+    "no-important": 2,
+    "hex-notation": [
+      2,
+      {
+        "style": "uppercase"
+      }
+    ],
+    "indentation": [
+      2,
+      {
+        "size": 2
+      }
+    ],
+    "property-sort-order": [
+      1,
+      {
+        "order": [
+          "display",
+          "margin"
+        ],
+        "ignore-custom-properties": true
+      }
+    ],
+    "variable-for-property": [
+      2,
+      {
+        "properties": [
+          "margin",
+          "content"
+        ]
+      }
+    ]
+  }
+}
