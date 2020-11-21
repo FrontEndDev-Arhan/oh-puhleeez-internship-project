@@ -7,7 +7,8 @@
 @import "base/base";
 
 // Import sass utilities
-@import "sass-utils/variables", "sass-utils/functions", "sass-utils/_mixins";
+@import "sass-utils/variables", "sass-utils/functions", "sass-utils/_mixins",
+  "sass-utils/placeholders";
 
 // Import sass layout styles
 @import "layout/navigation", "layout/header", "layout/tagline", "layout/grid",
@@ -17,3 +18,5 @@
 // Import sass frameworks
 @import "../../vendors/js-css__libraries/bourbon/core/bourbon",
   "../../vendors/js-css__libraries/breakpoint-sass/stylesheets/breakpoint";
+
+@import "pages/checkout__page";

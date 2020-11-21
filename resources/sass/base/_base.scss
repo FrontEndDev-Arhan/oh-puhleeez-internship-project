@@ -3,12 +3,22 @@ body {
   box-sizing: border-box;
 }
 
-// Setting Grid properties for the main content area including header & footer
+// Setting Grid properties for the main content area including header & footer for home page grid container
 .grid__container {
   display: grid;
 
   grid-template-rows: 40vw 100px 100px 300px 100px 300px min-content 100px 100px 20vw 50px;
   grid-template-columns: repeat(12, 1fr);
 
-  // gap: ;
+  gap: 30px 20px;
+}
+
+// Setting Grid properties for the main content area including header & footer for checkout page grid container
+.grid__container--two {
+  display: grid;
+
+  grid-template-rows: 40vw min-content 50px;
+  grid-template-columns: repeat(12, 1fr);
+
+  gap: 30px 20px;
 }

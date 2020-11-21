@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>images.html page</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="This web page is made for showing my front end development skills to get hired in Oh Puhleeez Digital Marketing Solutions"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="shopping, clothing, women" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <!-- <meta http-equiv="refresh" content="3; url=https://www.example.com" /> -->
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
@@ -41,302 +48,528 @@
         <ul class="nav mr-auto">
           <li class="nav-item searchbar">
             <div class="form-group">
-              <label for="internal__search" class="sr-only">search</label>
+              <label for="internal__search--one" class="sr-only">search</label>
               <input
                 type="search"
                 placeholder="eg. Macbook Pro"
                 class="form-control"
-                id="internal__search"
+                id="internal__search--one"
                 aria-label="search"
               />
             </div>
           </li>
         </ul>
-        <ul class="nav">
-          <li class="nav-item">
-            <a href="#" class="nav-link disabled">Products</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">Checkout</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"
-              ><i class="fa fa-cart-plus" aria-hidden="true"
-                ><span class="badge badge-pill">1</span></i
-              ></a
+        <!-- Nav tabs starts here -->
+        <ul class="nav nav-tabs">
+          <li class="nav-item active">
+            <a href="#tab-content--one" data-toggle="tab" class="nav-link"
+              >Home</a
             >
           </li>
+          <li class="nav-item">
+            <a href="#" data-toggle="tab" class="nav-link disabled">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" data-toggle="tab" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tab-content--two" data-toggle="tab" class="nav-link">
+              <i class="fa fa-cart-plus" aria-hidden="true"
+                ><span class="badge badge-pill">1</span></i
+              >
+            </a>
+          </li>
         </ul>
+        <!-- Nav tabs ends here -->
       </div>
 
       <!-- row one ends here -->
-      <!-- row two starts here ( main navigation bar) -->
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="navbar-brand mr-auto">
-          <img
-            src="resources/html__images/site__logo/site__logo.png"
-            alt="site_logo"
-          />
-        </div>
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
-              >Men</a
-            >
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Mens Items</a>
-              <a href="#" class="dropdown-item">Mens Items</a>
-              <a href="#" class="dropdown-item">Mens Items</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
-              >Women</a
-            >
-
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Womens Items</a>
-              <a href="#" class="dropdown-item">Womens Items</a>
-              <a href="#" class="dropdown-item">Womens Items</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
-              >Jewellery</a
-            >
-
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Jewellery Items</a>
-              <a href="#" class="dropdown-item">Jewellery Items</a>
-              <a href="#" class="dropdown-item">Jewellery Items</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
-              >Wallets</a
-            >
-
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Wallets</a>
-              <a href="#" class="dropdown-item">Wallets</a>
-              <a href="#" class="dropdown-item">Wallets</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
-              >Luxury</a
-            >
-
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Luxury Items</a>
-              <a href="#" class="dropdown-item">Luxury Items</a>
-              <a href="#" class="dropdown-item">Luxury Items</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <!-- row two ends here ( main navigation bar) -->
     </div>
     <!-- main bootstrap container ends here -->
+    <!-- tab pane one starts here -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab-content--one">
+        <div class="container-fluid px-0">
+          <!-- row two starts here ( main navigation bar) -->
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="navbar-brand mr-auto">
+              <a href="./index.html"
+                ><img
+                  src="resources/html__images/site__logo/site__logo.png"
+                  alt="site_logo"
+              /></a>
+            </div>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  class="nav-link dropdown-toggle"
+                  >Men</a
+                >
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Mens Items</a>
+                  <a href="#" class="dropdown-item">Mens Items</a>
+                  <a href="#" class="dropdown-item">Mens Items</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  class="nav-link dropdown-toggle"
+                  >Women</a
+                >
 
-    <!-- Note: All below content's layout is done with Css Grid!!! -->
-    <main class="grid__container">
-      <div class="hero__image"></div>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Womens Items</a>
+                  <a href="#" class="dropdown-item">Womens Items</a>
+                  <a href="#" class="dropdown-item">Womens Items</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  class="nav-link dropdown-toggle"
+                  >Jewellery</a
+                >
 
-      <!-- Tagline starts here -->
-      <p class="tagline d-flex justify-content-center align-items-center">
-        <span><em>&#8220;We stand for top quality templates.&#8221;</em></span>
-      </p>
-      <!-- Tagline ends here -->
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Jewellery Items</a>
+                  <a href="#" class="dropdown-item">Jewellery Items</a>
+                  <a href="#" class="dropdown-item">Jewellery Items</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  class="nav-link dropdown-toggle"
+                  >Wallets</a
+                >
 
-      <!-- Manufacturers divider starts here -->
-      <section
-        class="manufacturer__divider manufacturer__divider--one d-flex justify-content-start align-items-center"
-      >
-        <h3 class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1">
-          Feature Products
-        </h3>
-        <hr
-          class="manufacturer__divider--line flex-grow-1 border border-danger"
-        />
-      </section>
-      <!-- Manufacturers divider ends here -->
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Wallets</a>
+                  <a href="#" class="dropdown-item">Wallets</a>
+                  <a href="#" class="dropdown-item">Wallets</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  class="nav-link dropdown-toggle"
+                  >Luxury</a
+                >
 
-      <!-- Manufacturers divider starts here -->
-      <section
-        class="manufacturer__divider manufacturer__divider--two d-flex justify-content-start align-items-center"
-      >
-        <h3 class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1">
-          Latest Products
-        </h3>
-        <hr
-          class="manufacturer__divider--line flex-grow-1 border border-danger"
-        />
-      </section>
-      <!-- Manufacturers divider ends here -->
-
-      <!-- Services information section starts ( 24/7 support, free shipping etc.. ) -->
-
-      <section
-        class="service__support d-flex flex-row flex-wrap justify-content-between mx-auto"
-      >
-        <div
-          class="service__support--design d-flex flex-column justify-content-center align-items-center"
-        >
-          <span class="service__support__icon-container"
-            ><i
-              class="fa fa-motorcycle fa-2x icon service__support__icon service__support__icon--one text-light"
-              aria-hidden="true"
-            ></i>
-          </span>
-          <h3 class="h3 text-uppercase service__support__heading">
-            <span class="text-muted">modern</span> design
-          </h3>
-          <p class="text-center service__support__paragraph">
-            some content which shows the winter products of this city which has
-            specialised in the manufacturing of luxury clothing
-          </p>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a href="#" class="dropdown-item">Luxury Items</a>
+                  <a href="#" class="dropdown-item">Luxury Items</a>
+                  <a href="#" class="dropdown-item">Luxury Items</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- row two ends here ( main navigation bar) -->
         </div>
-        <div
-          class="service__support--shipping d-flex flex-column justify-content-center align-items-center"
-        >
-          <span class="service__support__icon-container"
-            ><i
-              class="fa fa-info-circle fa-2x icon service__support__icon service__support__icon--two text-light"
-              aria-hidden="true"
-            ></i
-          ></span>
-          <h3 class="h3 text-uppercase service__support__heading">
-            <span class="text-muted">modern</span> design
-          </h3>
-          <p class="text-center service__support__paragraph">
-            some content which shows the winter products of this city which has
-            specialised in the manufacturing of luxury clothing
+        <!-- main bootstrap container ends here -->
+
+        <!-- Note: All below content's layout is done with Css Grid!!! -->
+        <main class="grid__container">
+          <div class="hero__image"></div>
+
+          <!-- Tagline starts here -->
+          <p class="tagline d-flex justify-content-center align-items-center">
+            <span
+              ><em>&#8220;We stand for top quality templates.&#8221;</em></span
+            >
           </p>
-        </div>
-        <div
-          class="service__support--24x7 d-flex flex-column justify-content-center align-items-center"
-        >
-          <span class="service__support__icon-container"
-            ><i
-              class="fa fa-shopping-bag fa-2x icon service__support__icon service__support__icon--three text-light"
-              aria-hidden="true"
-            ></i>
-          </span>
-          <h3 class="h3 text-uppercase service__support__heading">
-            <span class="text-muted">modern</span> design
-          </h3>
-          <p class="text-center service__support__paragraph">
-            some content which shows the winter products of this city which has
-            specialised in the manufacturing of luxury clothing
-          </p>
-        </div>
-      </section>
+          <!-- Tagline ends here -->
 
-      <!-- Services information section ends ( 24/7 support, free shipping etc.. ) -->
-
-      <!-- Manufacturers divider starts here -->
-      <section
-        class="manufacturer__divider manufacturer__divider--three d-flex justify-content-start align-items-center"
-      >
-        <h3 class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1">
-          Manufacturers
-        </h3>
-        <hr
-          class="manufacturer__divider--line flex-grow-1 border border-danger"
-        />
-      </section>
-      <!-- Manufacturers divider ends here -->
-
-      <!-- Manufacturers logos -->
-      <section
-        class="manufacturers d-flex justify-content-around align-items-center flex-wrap"
-      >
-        <!-- manufacturers logo one -->
-        <img
-          src="resources/html__images/manufacturers__logos/mankind.png"
-          alt="placeholder image in temporary absense of a manufacturer logo"
-          class="manufacturers__logo manufacturers__logo--one"
-        />
-
-        <!-- manufacturers logo two -->
-        <img
-          src="resources/html__images/manufacturers__logos/replay.png"
-          alt="placeholder image in temporary absense of a manufacturer logo"
-          class="manufacturers__logo manufacturers__logo--two"
-        />
-
-        <!-- manufacturers logo three -->
-        <img
-          src="resources/html__images/manufacturers__logos/sprit.png"
-          alt="placeholder image in temporary absense of a manufacturer logo"
-          class="manufacturers__logo manufacturers__logo--three"
-        />
-
-        <!-- manufacturers logo four -->
-        <img
-          src="resources/html__images/manufacturers__logos/timberland.png"
-          alt="placeholder image in temporary absense of a manufacturer logo"
-          class="manufacturers__logo manufacturers__logo--four"
-        />
-
-        <!-- manufacturers logo five -->
-        <img
-          src="resources/html__images/manufacturers__logos/westwood.png"
-          alt="placeholder image in temporary absense of a manufacturer logo"
-          class="manufacturers__logo manufacturers__logo--five"
-        />
-
-        <!-- manufacturers logo six -->
-        <img
-          src="resources/html__images/manufacturers__logos/wrangler.png"
-          alt="placeholder image in temporary absense of a manufacturer logo"
-          class="manufacturers__logo manufacturers__logo--six"
-        />
-      </section>
-      <!-- First section of the footer starts here -->
-      <section class="footer__section--one bg-secondary">
-        <section class="footer__section--one--part1 text-white h-75">
-          <div class="lead mt-4">Navigation</div>
-          <ul class="list-unstyled mt-5">
-            <li class="p-1"><a href="#" class="text-white">Products</a></li>
-            <li class="p-1"><a href="#" class="text-white">Your cart</a></li>
-            <li class="p-1"><a href="#" class="text-white">Login</a></li>
-          </ul>
-        </section>
-        <section class="footer__section--one--part2 text-white h-75">
-          <div class="lead mt-4">My Account</div>
-          <ul class="list-unstyled mt-5">
-            <li class="p-1">
-              <a href="#" class="text-white">Order History</a>
-            </li>
-            <li class="p-1"><a href="#" class="text-white">Wish List</a></li>
-            <li class="p-1"><a href="#" class="text-white">Newsletter</a></li>
-          </ul>
-        </section>
-        <section class="footer__section--one--part3 text-white h-75">
-          <div class="lead mt-4">
-            <img
-              src="resources/html__images/site__logo/site__logo.png"
-              alt="site__logo"
+          <!-- Feature Products divider starts here -->
+          <section
+            class="manufacturer__divider manufacturer__divider--one d-flex justify-content-start align-items-center"
+          >
+            <h3
+              class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1 mr-4"
+            >
+              <span class="text-muted">Feature</span> Products
+            </h3>
+            <hr
+              class="manufacturer__divider--line flex-grow-1 border border-danger"
             />
+          </section>
+          <!-- Feature Products divider ends here -->
+
+          <!-- Features Product list starts here -->
+          <!-- Product 1 starts here -->
+          <div class="card featured__product-list--one">
+            <img
+              src="resources/html__images/products__list/bootstrap-women-ware1.jpg"
+              alt="featured product"
+              class="card-img"
+            />
+            <div class="card-img-overlay mt-5">
+              <h3 class="card-title text-center">wear your passion</h3>
+              <h4 class="card-subtitle text-center">live it</h4>
+              <p class="card-text text-center">$14.44</p>
+              <a href="#" class="card-link btn btn-info text-center mt-3"
+                >Add to cart</a
+              >
+            </div>
           </div>
-          <p class="text-center mt-5">
-            Shopping is really cool. You can do more shopping with more money.
-            You can buy lot of luxury items if you work hard intelligently and
-            cleverly ( being corrupt is different ) in life.
-          </p>
+          <!-- Product 1 ends here -->
+          <!-- Product 2 starts here -->
+          <div class="card featured__product-list--two">
+            <img
+              src="resources/html__images/products__list/bootstrap-women-ware2.jpg"
+              alt="featured product"
+              class="card-img"
+            />
+            <div class="card-img-overlay mt-5">
+              <h3 class="card-title text-center">wear your passion</h3>
+              <h4 class="card-subtitle text-center">live it</h4>
+              <p class="card-text text-center">$15.44</p>
+              <a href="#" class="card-link btn btn-info text-center mt-3"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+          <!-- Product 2 ends here -->
+          <!-- Product 3 starts here -->
+          <div class="card featured__product-list--three">
+            <img
+              src="resources/html__images/products__list/bootstrap-women-ware3.jpg"
+              alt="featured product"
+              class="card-img"
+            />
+            <div class="card-img-overlay mt-5">
+              <h3 class="card-title text-center">wear your passion</h3>
+              <h4 class="card-subtitle text-center">live it</h4>
+              <p class="card-text text-center">$16.44</p>
+              <a href="#" class="card-link btn btn-info text-center mt-3"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+          <!-- Product 3 ends here -->
+          <!-- Product 4 starts here -->
+          <div class="card featured__product-list--four">
+            <img
+              src="resources/html__images/products__list/bootstrap-women-ware4.jpg"
+              alt="featured product"
+              class="card-img"
+            />
+            <div class="card-img-overlay mt-5">
+              <h3 class="card-title text-center">wear your passion</h3>
+              <h4 class="card-subtitle text-center">live it</h4>
+              <p class="card-text text-center">$17.44</p>
+              <a href="#" class="card-link btn btn-info text-center mt-3"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+          <!-- Product 4 ends here -->
+
+          <!-- Latest Products divider starts here -->
+          <section
+            class="manufacturer__divider manufacturer__divider--two d-flex justify-content-start align-items-center"
+          >
+            <h3
+              class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1 mr-4"
+            >
+              <span class="text-muted">Latest</span> Products
+            </h3>
+            <hr
+              class="manufacturer__divider--line flex-grow-1 border border-danger"
+            />
+          </section>
+          <!-- Latest Products divider ends here -->
+
+          <!-- Latest Product list starts here -->
+          <!-- Product 1 starts here -->
+          <div class="card latest__product-list--one">
+            <img
+              src="resources/html__images/products__list/bootstrap-women-ware5.jpg"
+              alt="featured product"
+              class="card-img"
+            />
+            <div class="card-img-overlay mt-5">
+              <h3 class="card-title text-center">wear your passion</h3>
+              <h4 class="card-subtitle text-center">live it</h4>
+              <p class="card-text text-center">$18.44</p>
+              <a href="#" class="btn btn-info card-link text-center mt-3"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+          <!-- Product 1 ends here -->
+          <!-- Product 2 starts here -->
+          <div class="card latest__product-list--two">
+            <img
+              src="resources/html__images/products__list/bootstrap-women-ware6.jpg"
+              alt="featured product"
+              class="card-img"
+            />
+            <div class="card-img-overlay mt-5">
+              <h3 class="card-title text-center">wear your passion</h3>
+              <h4 class="card-subtitle text-center">live it</h4>
+              <p class="card-text text-center">$19.44</p>
+              <a href="#" class="card-link btn btn-info text-center mt-3"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+          <!-- Product 2 ends here -->
+          <!-- Product 3 starts here -->
+          <div class="card latest__product-list--three">
+            <img
+              src="resources/html__images/products__list/bootstrap-women-ware7.jpg"
+              alt="featured product"
+              class="card-img"
+            />
+            <div class="card-img-overlay mt-5">
+              <h3 class="card-title text-center">wear your passion</h3>
+              <h4 class="card-subtitle text-center">live it</h4>
+              <p class="card-text text-center">$20.44</p>
+              <a href="#" class="card-link btn btn-info text-center mt-3"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+
+          <!-- Product 3 ends here -->
+          <!-- Product 4 starts here -->
+          <div class="card latest__product-list--four">
+            <img
+              src="resources/html__images/products__list/bootstrap-women-ware8.jpg"
+              alt="featured product"
+              class="card-img"
+            />
+            <div class="card-img-overlay mt-5">
+              <h3 class="card-title text-center">wear your passion</h3>
+              <h4 class="card-subtitle text-center">live it</h4>
+              <p class="card-text text-center">$21.44</p>
+              <a href="" class="card-link btn btn-info text-center mt-3"
+                >Add to cart</a
+              >
+            </div>
+          </div>
+          <!-- Product 4 ends here -->
+
+          <!-- Services information section starts ( 24/7 support, free shipping etc.. ) -->
+
+          <section
+            class="service__support d-flex flex-row flex-wrap justify-content-between mx-auto"
+          >
+            <div
+              class="service__support--design d-flex flex-column justify-content-center align-items-center"
+            >
+              <span class="service__support__icon-container"
+                ><i
+                  class="fa fa-motorcycle fa-2x icon service__support__icon service__support__icon--one text-light"
+                  aria-hidden="true"
+                ></i>
+              </span>
+              <h3 class="h3 text-uppercase service__support__heading">
+                <span class="text-muted">modern</span> design
+              </h3>
+              <p class="text-center service__support__paragraph">
+                some content which shows the winter products of this city which
+                has specialised in the manufacturing of luxury clothing
+              </p>
+            </div>
+            <div
+              class="service__support--shipping d-flex flex-column justify-content-center align-items-center"
+            >
+              <span class="service__support__icon-container"
+                ><i
+                  class="fa fa-info-circle fa-2x icon service__support__icon service__support__icon--two text-light"
+                  aria-hidden="true"
+                ></i
+              ></span>
+              <h3 class="h3 text-uppercase service__support__heading">
+                <span class="text-muted">modern</span> design
+              </h3>
+              <p class="text-center service__support__paragraph">
+                some content which shows the winter products of this city which
+                has specialised in the manufacturing of luxury clothing
+              </p>
+            </div>
+            <div
+              class="service__support--24x7 d-flex flex-column justify-content-center align-items-center"
+            >
+              <span class="service__support__icon-container"
+                ><i
+                  class="fa fa-shopping-bag fa-2x icon service__support__icon service__support__icon--three text-light"
+                  aria-hidden="true"
+                ></i>
+              </span>
+              <h3 class="h3 text-uppercase service__support__heading">
+                <span class="text-muted">modern</span> design
+              </h3>
+              <p class="text-center service__support__paragraph">
+                some content which shows the winter products of this city which
+                has specialised in the manufacturing of luxury clothing
+              </p>
+            </div>
+          </section>
+
+          <!-- Services information section ends ( 24/7 support, free shipping etc.. ) -->
+
+          <!-- Manufacturers divider starts here -->
+          <section
+            class="manufacturer__divider manufacturer__divider--three d-flex justify-content-start align-items-center"
+          >
+            <h3
+              class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1 mr-4"
+            >
+              Manufacturers
+            </h3>
+            <hr
+              class="manufacturer__divider--line flex-grow-1 border border-danger"
+            />
+          </section>
+          <!-- Manufacturers divider ends here -->
+
+          <!-- Manufacturers logos -->
+          <section
+            class="manufacturers d-flex justify-content-around align-items-center flex-wrap"
+          >
+            <!-- manufacturers logo one -->
+            <img
+              src="resources/html__images/manufacturers__logos/mankind.png"
+              alt="placeholder image in temporary absense of a manufacturer logo"
+              class="manufacturers__logo manufacturers__logo--one"
+            />
+
+            <!-- manufacturers logo two -->
+            <img
+              src="resources/html__images/manufacturers__logos/replay.png"
+              alt="placeholder image in temporary absense of a manufacturer logo"
+              class="manufacturers__logo manufacturers__logo--two"
+            />
+
+            <!-- manufacturers logo three -->
+            <img
+              src="resources/html__images/manufacturers__logos/sprit.png"
+              alt="placeholder image in temporary absense of a manufacturer logo"
+              class="manufacturers__logo manufacturers__logo--three"
+            />
+
+            <!-- manufacturers logo four -->
+            <img
+              src="resources/html__images/manufacturers__logos/timberland.png"
+              alt="placeholder image in temporary absense of a manufacturer logo"
+              class="manufacturers__logo manufacturers__logo--four"
+            />
+
+            <!-- manufacturers logo five -->
+            <img
+              src="resources/html__images/manufacturers__logos/westwood.png"
+              alt="placeholder image in temporary absense of a manufacturer logo"
+              class="manufacturers__logo manufacturers__logo--five"
+            />
+
+            <!-- manufacturers logo six -->
+            <img
+              src="resources/html__images/manufacturers__logos/wrangler.png"
+              alt="placeholder image in temporary absense of a manufacturer logo"
+              class="manufacturers__logo manufacturers__logo--six"
+            />
+          </section>
+          <!-- First section of the footer starts here -->
+          <section class="footer__section--one bg-secondary">
+            <section class="footer__section--one--part1 text-white h-75">
+              <div class="lead mt-4">Navigation</div>
+              <ul class="list-unstyled mt-5">
+                <li class="p-1">
+                  <a href="#" class="text-white">Products</a>
+                </li>
+                <li class="p-1">
+                  <a href="#" class="text-white">Your cart</a>
+                </li>
+                <li class="p-1"><a href="#" class="text-white">Login</a></li>
+              </ul>
+            </section>
+            <section class="footer__section--one--part2 text-white h-75">
+              <div class="lead mt-4">My Account</div>
+              <ul class="list-unstyled mt-5">
+                <li class="p-1">
+                  <a href="#" class="text-white">Order History</a>
+                </li>
+                <li class="p-1">
+                  <a href="#" class="text-white">Wish List</a>
+                </li>
+                <li class="p-1">
+                  <a href="#" class="text-white">Newsletter</a>
+                </li>
+              </ul>
+            </section>
+            <section class="footer__section--one--part3 text-white h-75">
+              <div class="lead mt-4">
+                <a href="./index.html"
+                  ><img
+                    src="resources/html__images/site__logo/site__logo.png"
+                    alt="site__logo"
+                /></a>
+              </div>
+              <p class="text-center mt-5">
+                Shopping is really cool. You can do more shopping with more
+                money. You can buy lot of luxury items if you work hard
+                intelligently and cleverly ( being corrupt is different ) in
+                life.
+              </p>
+            </section>
+          </section>
+          <!-- First section of the footer ends here -->
+          <!-- Second section of the footer starts here -->
+          <section class="footer__section--two bg-dark">
+            <section class="copyright__content text-white">
+              Copyright@2020 Arhan Kamra, Oh Puhleez Digital Marketing Solutions
+              - All rights reserved.
+            </section>
+          </section>
+          <!-- Second section of the footer ends here -->
+        </main>
+      </div>
+      <!-- tab pane home ends here -->
+      <!-- tab pane checkout starts here -->
+      <div class="tab-pane fade" id="tab-content--two">
+        <!-- Add your site or application content here -->
+
+        <h1 class="h1 text-center">Checkout Your Products</h1>
+        <!-- Your cart divider starts here -->
+        <section
+          class="manufacturer__divider manufacturer__divider--three d-flex justify-content-start align-items-center mt-5"
+        >
+          <h3
+            class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1 mr-4"
+          >
+            Your Cart
+          </h3>
+          <hr
+            class="manufacturer__divider--line flex-grow-1 border border-danger"
+          />
         </section>
-      </section>
-      <!-- First section of the footer ends here -->
-      <!-- Second section of the footer starts here -->
-      <section class="footer__section--two bg-dark">
-        <section class="copyright__content text-white">
-          Copyright@2020 Arhan Kamra, Oh Puhleez Digital Marketing Solutions -
-          All rights reserved.
-        </section>
-      </section>
-      <!-- Second section of the footer ends here -->
-    </main>
+        <!-- Your cart divider ends here -->
+        <!-- Note: All below content's layout is done with Css Grid!!! -->
+        <main class="grid__container--two">
+          <!-- Second section of the footer starts here -->
+          <section class="footer__section--two2 bg-dark">
+            <section class="copyright__content text-white">
+              Copyright@2020 Arhan Kamra, Oh Puhleez Digital Marketing Solutions
+              - All rights reserved.
+            </section>
+          </section>
+          <!-- Second section of the footer ends here -->
+        </main>
+      </div>
+      <!-- tab pane checkout ends here -->
+    </div>
+    <!-- tab content two ends here  -->
+
     <!-- build:js js/main.min.js -->
 
     <script
@@ -356,7 +589,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="resources/js/index.js"></script>
+    <script src="../js/index.js"></script>
     <!-- end build -->
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -377,6 +610,9 @@
       // prettier-ignore
       ga('send', 'pageview');
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <script
+      src="https://www.google-analytics.com/analytics.js"
+      async=""
+    ></script>
   </body>
 </html>

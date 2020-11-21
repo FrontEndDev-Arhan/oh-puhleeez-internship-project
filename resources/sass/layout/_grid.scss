@@ -1,0 +1,71 @@
+// Laying out featured products 4 in a grid
+%image {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.featured__product-list--one {
+  grid-row: 4 / 5;
+  grid-column: 3 / 5;
+  @extend %image;
+}
+
+.featured__product-list--two {
+  grid-row: 4 / 5;
+  grid-column: 5 / 7;
+  @extend %image;
+}
+
+.featured__product-list--three {
+  grid-row: 4 / 5;
+  grid-column: 7 / 9;
+  @extend %image;
+}
+
+.featured__product-list--four {
+  grid-row: 4 / 5;
+  grid-column: 9 / 11;
+  @extend %image;
+}
+
+// Laying out latest products 4 in a grid
+.latest__product-list--one {
+  grid-row: 6 / 7;
+  grid-column: 3 / 5;
+  @extend %image;
+}
+
+.latest__product-list--two {
+  grid-row: 6 / 7;
+  grid-column: 5 / 7;
+  @extend %image;
+}
+
+.latest__product-list--three {
+  grid-row: 6 / 7;
+  grid-column: 7 / 9;
+  @extend %image;
+}
+
+.latest__product-list--four {
+  grid-row: 6 / 7;
+  grid-column: 9 / 11;
+  @extend %image;
+}
+
+// Giving card image full width and height of its container
+.card-img {
+  @extend %image;
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+// Styling Add to cart link
+.card-link {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
