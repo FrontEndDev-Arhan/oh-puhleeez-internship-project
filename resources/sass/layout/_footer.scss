@@ -21,9 +21,24 @@
   }
 }
 
-// Setting Grid properties for lower section of the footer
+// Setting Grid properties for lower section of the footer for home page
 .footer__section--two {
   grid-row: 11 / 12;
+  grid-column: 1 / all;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .copyright__content {
+    max-width: max-content;
+  }
+}
+
+// Setting Grid properties for lower section of the footer for checkout page
+.footer__section--two2 {
+  grid-row: 3 / 4;
   grid-column: 1 / all;
 
   display: flex;
