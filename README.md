@@ -4,14 +4,14 @@
 
 > It contains the following componenets:
 
-- [ ] Main Products Page where Dummy Products are shown
-- [ ] Hero Image
-- [ ] Add to Cart Option
-- [ ] Dummy Checkout page
-- [ ] Footer
+- [x] Main Products Page where Dummy Products are shown
+- [x] Hero Image
+- [x] Add to Cart Option
+- [x] Dummy Checkout page
+- [x] Footer
 
 Main Products
-: The page contains 5 dummy products in the category of Microsoft Surface Pro Laptops
+: The page contains 8 dummy products in the category of Clothing
 
 Footer
 : Footer contains copyright and other legal information
