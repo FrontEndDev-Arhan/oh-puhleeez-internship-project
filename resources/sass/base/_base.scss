@@ -7,7 +7,7 @@ body {
 .grid__container {
   display: grid;
 
-  grid-template-rows: 40vw 100px 20px 300px 20px 300px 200px 20px 100px 20vw 50px;
+  grid-template-rows: 40vw 100px 100px 300px 100px 300px min-content 100px 100px 20vw 50px;
   grid-template-columns: repeat(12, 1fr);
 
   // gap: ;

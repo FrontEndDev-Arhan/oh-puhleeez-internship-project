@@ -56,9 +56,15 @@
           <li class="nav-item">
             <a href="#" class="nav-link disabled">Products</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">Your cart</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Checkout</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fa fa-cart-plus" aria-hidden="true"
+                ><span class="badge badge-pill">1</span></i
+              ></a
+            >
+          </li>
         </ul>
       </div>
 
@@ -67,7 +73,7 @@
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="navbar-brand mr-auto">
           <img
-            src="https://via.placeholder.com/50/50.png?text=navbar+brand+logo"
+            src="resources/html__images/site__logo/site__logo.png"
             alt="site_logo"
           />
         </div>
@@ -134,11 +140,112 @@
 
     <!-- Note: All below content's layout is done with Css Grid!!! -->
     <main class="grid__container">
-      <img
-        src="https://picsum.photos/id/66/500/500?grayscale"
-        alt="placeholder image as a result of absence of original hero image"
-        class="hero__image"
-      />
+      <div class="hero__image"></div>
+
+      <!-- Tagline starts here -->
+      <p class="tagline d-flex justify-content-center align-items-center">
+        <span><em>&#8220;We stand for top quality templates.&#8221;</em></span>
+      </p>
+      <!-- Tagline ends here -->
+
+      <!-- Manufacturers divider starts here -->
+      <section
+        class="manufacturer__divider manufacturer__divider--one d-flex justify-content-start align-items-center"
+      >
+        <h3 class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1">
+          Feature Products
+        </h3>
+        <hr
+          class="manufacturer__divider--line flex-grow-1 border border-danger"
+        />
+      </section>
+      <!-- Manufacturers divider ends here -->
+
+      <!-- Manufacturers divider starts here -->
+      <section
+        class="manufacturer__divider manufacturer__divider--two d-flex justify-content-start align-items-center"
+      >
+        <h3 class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1">
+          Latest Products
+        </h3>
+        <hr
+          class="manufacturer__divider--line flex-grow-1 border border-danger"
+        />
+      </section>
+      <!-- Manufacturers divider ends here -->
+
+      <!-- Services information section starts ( 24/7 support, free shipping etc.. ) -->
+
+      <section
+        class="service__support d-flex flex-row flex-wrap justify-content-between mx-auto"
+      >
+        <div
+          class="service__support--design d-flex flex-column justify-content-center align-items-center"
+        >
+          <span class="service__support__icon-container"
+            ><i
+              class="fa fa-motorcycle fa-2x icon service__support__icon service__support__icon--one text-light"
+              aria-hidden="true"
+            ></i>
+          </span>
+          <h3 class="h3 text-uppercase service__support__heading">
+            <span class="text-muted">modern</span> design
+          </h3>
+          <p class="text-center service__support__paragraph">
+            some content which shows the winter products of this city which has
+            specialised in the manufacturing of luxury clothing
+          </p>
+        </div>
+        <div
+          class="service__support--shipping d-flex flex-column justify-content-center align-items-center"
+        >
+          <span class="service__support__icon-container"
+            ><i
+              class="fa fa-info-circle fa-2x icon service__support__icon service__support__icon--two text-light"
+              aria-hidden="true"
+            ></i
+          ></span>
+          <h3 class="h3 text-uppercase service__support__heading">
+            <span class="text-muted">modern</span> design
+          </h3>
+          <p class="text-center service__support__paragraph">
+            some content which shows the winter products of this city which has
+            specialised in the manufacturing of luxury clothing
+          </p>
+        </div>
+        <div
+          class="service__support--24x7 d-flex flex-column justify-content-center align-items-center"
+        >
+          <span class="service__support__icon-container"
+            ><i
+              class="fa fa-shopping-bag fa-2x icon service__support__icon service__support__icon--three text-light"
+              aria-hidden="true"
+            ></i>
+          </span>
+          <h3 class="h3 text-uppercase service__support__heading">
+            <span class="text-muted">modern</span> design
+          </h3>
+          <p class="text-center service__support__paragraph">
+            some content which shows the winter products of this city which has
+            specialised in the manufacturing of luxury clothing
+          </p>
+        </div>
+      </section>
+
+      <!-- Services information section ends ( 24/7 support, free shipping etc.. ) -->
+
+      <!-- Manufacturers divider starts here -->
+      <section
+        class="manufacturer__divider manufacturer__divider--three d-flex justify-content-start align-items-center"
+      >
+        <h3 class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1">
+          Manufacturers
+        </h3>
+        <hr
+          class="manufacturer__divider--line flex-grow-1 border border-danger"
+        />
+      </section>
+      <!-- Manufacturers divider ends here -->
 
       <!-- Manufacturers logos -->
       <section
@@ -146,42 +253,42 @@
       >
         <!-- manufacturers logo one -->
         <img
-          src="https://picsum.photos/id/1/50/50"
+          src="resources/html__images/manufacturers__logos/mankind.png"
           alt="placeholder image in temporary absense of a manufacturer logo"
           class="manufacturers__logo manufacturers__logo--one"
         />
 
         <!-- manufacturers logo two -->
         <img
-          src="https://picsum.photos/id/1/50/50"
+          src="resources/html__images/manufacturers__logos/replay.png"
           alt="placeholder image in temporary absense of a manufacturer logo"
           class="manufacturers__logo manufacturers__logo--two"
         />
 
         <!-- manufacturers logo three -->
         <img
-          src="https://picsum.photos/id/1/50/50"
+          src="resources/html__images/manufacturers__logos/sprit.png"
           alt="placeholder image in temporary absense of a manufacturer logo"
           class="manufacturers__logo manufacturers__logo--three"
         />
 
         <!-- manufacturers logo four -->
         <img
-          src="https://picsum.photos/id/1/50/50"
+          src="resources/html__images/manufacturers__logos/timberland.png"
           alt="placeholder image in temporary absense of a manufacturer logo"
           class="manufacturers__logo manufacturers__logo--four"
         />
 
         <!-- manufacturers logo five -->
         <img
-          src="https://picsum.photos/id/1/50/50"
+          src="resources/html__images/manufacturers__logos/westwood.png"
           alt="placeholder image in temporary absense of a manufacturer logo"
           class="manufacturers__logo manufacturers__logo--five"
         />
 
         <!-- manufacturers logo six -->
         <img
-          src="https://picsum.photos/id/1/50/50"
+          src="resources/html__images/manufacturers__logos/wrangler.png"
           alt="placeholder image in temporary absense of a manufacturer logo"
           class="manufacturers__logo manufacturers__logo--six"
         />
@@ -208,7 +315,10 @@
         </section>
         <section class="footer__section--one--part3 text-white h-75">
           <div class="lead mt-4">
-            Shopper <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            <img
+              src="resources/html__images/site__logo/site__logo.png"
+              alt="site__logo"
+            />
           </div>
           <p class="text-center mt-5">
             Shopping is really cool. You can do more shopping with more money.

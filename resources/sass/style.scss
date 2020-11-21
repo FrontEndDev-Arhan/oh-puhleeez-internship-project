@@ -10,8 +10,9 @@
 @import "sass-utils/variables", "sass-utils/functions", "sass-utils/_mixins";
 
 // Import sass layout styles
-@import "layout/navigation", "layout/header", "layout/grid",
-  "layout/manufacturers__logos", "layout/footer";
+@import "layout/navigation", "layout/header", "layout/tagline", "layout/grid",
+  "layout/service__support", "layout/manufacturers__logos", "layout/footer",
+  "layout/divider";
 
 // Import sass frameworks
 @import "../../vendors/js-css__libraries/bourbon/core/bourbon",
