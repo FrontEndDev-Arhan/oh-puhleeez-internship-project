@@ -1,0 +1,31 @@
+// Layout for the section dividers
+.manufacturer__divider {
+  &--one {
+    grid-row: 3 / 4;
+    grid-column: 1 / span all;
+    width: 100%;
+  }
+
+  &--two {
+    grid-row: 5 / 6;
+    grid-column: 1 / span all;
+    width: 100%;
+  }
+
+  &--three {
+    grid-row: 8 / 9;
+    grid-column: 1 / span all;
+    width: 100%;
+  }
+
+  // Styling divider title position
+  &--title {
+    flex-shrink: 0;
+  }
+
+  // Styling divider line
+  &--line {
+    width: 100%;
+    height: 1px;
+  }
+}
