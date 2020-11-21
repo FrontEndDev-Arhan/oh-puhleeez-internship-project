@@ -1,0 +1,36 @@
+// Laying out the services support section
+.service__support {
+  grid-row: 7 / 8;
+  grid-column: 1 / -1;
+
+  max-width: 90%;
+
+  &--design,
+  &--24x7,
+  &--shipping {
+    width: 25%;
+  }
+
+  // Give margin to heading and paragraphs inside service__support section
+  &__heading,
+  &__paragraph {
+    margin-top: 2vw;
+  }
+
+  // Styling icon container and giving it dimensions
+  &__icon-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: pink;
+  }
+
+  // Position icon in the middle of its container
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

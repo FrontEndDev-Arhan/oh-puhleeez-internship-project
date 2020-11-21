@@ -1,7 +1,19 @@
 /** @format */
 
-$dark__color: #444;
+// Import css out of box fixes and normalize.css to the website work similarly across browsers
+@import "base/normalize", "base/main";
 
-body {
-  color: $dark__color;
-}
+// Import base scss styles
+@import "base/base";
+
+// Import sass utilities
+@import "sass-utils/variables", "sass-utils/functions", "sass-utils/_mixins";
+
+// Import sass layout styles
+@import "layout/navigation", "layout/header", "layout/tagline", "layout/grid",
+  "layout/service__support", "layout/manufacturers__logos", "layout/footer",
+  "layout/divider";
+
+// Import sass frameworks
+@import "../../vendors/js-css__libraries/bourbon/core/bourbon",
+  "../../vendors/js-css__libraries/breakpoint-sass/stylesheets/breakpoint";

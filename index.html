@@ -8,11 +8,6 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <!-- <link rel="stylesheet" href="vendors/js-css__libraries/font-awesome/css/fontawesome.min.css"> -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
 
     <meta property="og:title" content="" />
     <meta property="og:type" content="" />
@@ -20,33 +15,344 @@
     <meta property="og:image" content="" />
 
     <!--build:css css/main.min.css -->
-    <!-- <link rel="stylesheet" href="vendors/js-css__libraries/bootstrap/dist/css/bootstrap.min.css"> -->
+    <script src="vendors/js-css__libraries/modernizr__library/modernizr--custom.js"></script>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
-      integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="resources/css/style.css" />
     <!-- endbuild -->
-
-    <!-- <script src="vendors/js-css__libraries/modernizr__library/modernizr.js"></script> -->
-    <script src="vendors/js-css__libraries/modernizr__library/modernizr--custom.js"></script>
   </head>
 
   <body>
     <!-- Add your site or application content here -->
+    <!-- main bootstrap container starts here -->
+    <div class="container-fluid px-0">
+      <!-- row one starts here -->
+      <div class="row px-4">
+        <!-- secondary menu ( account | cart etc.. ) -->
+        <ul class="nav mr-auto">
+          <li class="nav-item searchbar">
+            <div class="form-group">
+              <label for="internal__search" class="sr-only">search</label>
+              <input
+                type="search"
+                placeholder="eg. Macbook Pro"
+                class="form-control"
+                id="internal__search"
+                aria-label="search"
+              />
+            </div>
+          </li>
+        </ul>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled">Products</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Checkout</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fa fa-cart-plus" aria-hidden="true"
+                ><span class="badge badge-pill">1</span></i
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
 
+      <!-- row one ends here -->
+      <!-- row two starts here ( main navigation bar) -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="navbar-brand mr-auto">
+          <img
+            src="resources/html__images/site__logo/site__logo.png"
+            alt="site_logo"
+          />
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
+              >Men</a
+            >
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Mens Items</a>
+              <a href="#" class="dropdown-item">Mens Items</a>
+              <a href="#" class="dropdown-item">Mens Items</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
+              >Women</a
+            >
+
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Womens Items</a>
+              <a href="#" class="dropdown-item">Womens Items</a>
+              <a href="#" class="dropdown-item">Womens Items</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
+              >Jewellery</a
+            >
+
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Jewellery Items</a>
+              <a href="#" class="dropdown-item">Jewellery Items</a>
+              <a href="#" class="dropdown-item">Jewellery Items</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
+              >Wallets</a
+            >
+
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Wallets</a>
+              <a href="#" class="dropdown-item">Wallets</a>
+              <a href="#" class="dropdown-item">Wallets</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
+              >Luxury</a
+            >
+
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Luxury Items</a>
+              <a href="#" class="dropdown-item">Luxury Items</a>
+              <a href="#" class="dropdown-item">Luxury Items</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- row two ends here ( main navigation bar) -->
+    </div>
+    <!-- main bootstrap container ends here -->
+
+    <!-- Note: All below content's layout is done with Css Grid!!! -->
+    <main class="grid__container">
+      <div class="hero__image"></div>
+
+      <!-- Tagline starts here -->
+      <p class="tagline d-flex justify-content-center align-items-center">
+        <span><em>&#8220;We stand for top quality templates.&#8221;</em></span>
+      </p>
+      <!-- Tagline ends here -->
+
+      <!-- Manufacturers divider starts here -->
+      <section
+        class="manufacturer__divider manufacturer__divider--one d-flex justify-content-start align-items-center"
+      >
+        <h3 class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1">
+          Feature Products
+        </h3>
+        <hr
+          class="manufacturer__divider--line flex-grow-1 border border-danger"
+        />
+      </section>
+      <!-- Manufacturers divider ends here -->
+
+      <!-- Manufacturers divider starts here -->
+      <section
+        class="manufacturer__divider manufacturer__divider--two d-flex justify-content-start align-items-center"
+      >
+        <h3 class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1">
+          Latest Products
+        </h3>
+        <hr
+          class="manufacturer__divider--line flex-grow-1 border border-danger"
+        />
+      </section>
+      <!-- Manufacturers divider ends here -->
+
+      <!-- Services information section starts ( 24/7 support, free shipping etc.. ) -->
+
+      <section
+        class="service__support d-flex flex-row flex-wrap justify-content-between mx-auto"
+      >
+        <div
+          class="service__support--design d-flex flex-column justify-content-center align-items-center"
+        >
+          <span class="service__support__icon-container"
+            ><i
+              class="fa fa-motorcycle fa-2x icon service__support__icon service__support__icon--one text-light"
+              aria-hidden="true"
+            ></i>
+          </span>
+          <h3 class="h3 text-uppercase service__support__heading">
+            <span class="text-muted">modern</span> design
+          </h3>
+          <p class="text-center service__support__paragraph">
+            some content which shows the winter products of this city which has
+            specialised in the manufacturing of luxury clothing
+          </p>
+        </div>
+        <div
+          class="service__support--shipping d-flex flex-column justify-content-center align-items-center"
+        >
+          <span class="service__support__icon-container"
+            ><i
+              class="fa fa-info-circle fa-2x icon service__support__icon service__support__icon--two text-light"
+              aria-hidden="true"
+            ></i
+          ></span>
+          <h3 class="h3 text-uppercase service__support__heading">
+            <span class="text-muted">modern</span> design
+          </h3>
+          <p class="text-center service__support__paragraph">
+            some content which shows the winter products of this city which has
+            specialised in the manufacturing of luxury clothing
+          </p>
+        </div>
+        <div
+          class="service__support--24x7 d-flex flex-column justify-content-center align-items-center"
+        >
+          <span class="service__support__icon-container"
+            ><i
+              class="fa fa-shopping-bag fa-2x icon service__support__icon service__support__icon--three text-light"
+              aria-hidden="true"
+            ></i>
+          </span>
+          <h3 class="h3 text-uppercase service__support__heading">
+            <span class="text-muted">modern</span> design
+          </h3>
+          <p class="text-center service__support__paragraph">
+            some content which shows the winter products of this city which has
+            specialised in the manufacturing of luxury clothing
+          </p>
+        </div>
+      </section>
+
+      <!-- Services information section ends ( 24/7 support, free shipping etc.. ) -->
+
+      <!-- Manufacturers divider starts here -->
+      <section
+        class="manufacturer__divider manufacturer__divider--three d-flex justify-content-start align-items-center"
+      >
+        <h3 class="h3 manufacturer__divider--title flex-shrink-0 flex-grow-1">
+          Manufacturers
+        </h3>
+        <hr
+          class="manufacturer__divider--line flex-grow-1 border border-danger"
+        />
+      </section>
+      <!-- Manufacturers divider ends here -->
+
+      <!-- Manufacturers logos -->
+      <section
+        class="manufacturers d-flex justify-content-around align-items-center flex-wrap"
+      >
+        <!-- manufacturers logo one -->
+        <img
+          src="resources/html__images/manufacturers__logos/mankind.png"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--one"
+        />
+
+        <!-- manufacturers logo two -->
+        <img
+          src="resources/html__images/manufacturers__logos/replay.png"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--two"
+        />
+
+        <!-- manufacturers logo three -->
+        <img
+          src="resources/html__images/manufacturers__logos/sprit.png"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--three"
+        />
+
+        <!-- manufacturers logo four -->
+        <img
+          src="resources/html__images/manufacturers__logos/timberland.png"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--four"
+        />
+
+        <!-- manufacturers logo five -->
+        <img
+          src="resources/html__images/manufacturers__logos/westwood.png"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--five"
+        />
+
+        <!-- manufacturers logo six -->
+        <img
+          src="resources/html__images/manufacturers__logos/wrangler.png"
+          alt="placeholder image in temporary absense of a manufacturer logo"
+          class="manufacturers__logo manufacturers__logo--six"
+        />
+      </section>
+      <!-- First section of the footer starts here -->
+      <section class="footer__section--one bg-secondary">
+        <section class="footer__section--one--part1 text-white h-75">
+          <div class="lead mt-4">Navigation</div>
+          <ul class="list-unstyled mt-5">
+            <li class="p-1"><a href="#" class="text-white">Products</a></li>
+            <li class="p-1"><a href="#" class="text-white">Your cart</a></li>
+            <li class="p-1"><a href="#" class="text-white">Login</a></li>
+          </ul>
+        </section>
+        <section class="footer__section--one--part2 text-white h-75">
+          <div class="lead mt-4">My Account</div>
+          <ul class="list-unstyled mt-5">
+            <li class="p-1">
+              <a href="#" class="text-white">Order History</a>
+            </li>
+            <li class="p-1"><a href="#" class="text-white">Wish List</a></li>
+            <li class="p-1"><a href="#" class="text-white">Newsletter</a></li>
+          </ul>
+        </section>
+        <section class="footer__section--one--part3 text-white h-75">
+          <div class="lead mt-4">
+            <img
+              src="resources/html__images/site__logo/site__logo.png"
+              alt="site__logo"
+            />
+          </div>
+          <p class="text-center mt-5">
+            Shopping is really cool. You can do more shopping with more money.
+            You can buy lot of luxury items if you work hard intelligently and
+            cleverly ( being corrupt is different ) in life.
+          </p>
+        </section>
+      </section>
+      <!-- First section of the footer ends here -->
+      <!-- Second section of the footer starts here -->
+      <section class="footer__section--two bg-dark">
+        <section class="copyright__content text-white">
+          Copyright@2020 Arhan Kamra, Oh Puhleez Digital Marketing Solutions -
+          All rights reserved.
+        </section>
+      </section>
+      <!-- Second section of the footer ends here -->
+    </main>
     <!-- build:js js/main.min.js -->
-    <!-- <script src="vendors/js-css__libraries/jquery/dist/jquery.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
-    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-    <!-- <script src="vendors/js-css__libraries/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"
-      integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
 
@@ -55,21 +361,21 @@
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
-      // let ga;
-      // window.ga = function () {
-      //   // eslint-disable-next-line prefer-rest-params
-      //   ga.q.push(arguments);
-      // };
-      // ga.q = [];
-      // ga.l = +new Date();
-      // // prettier-ignore
-      // ga('create', 'UA-XXXXX-Y', 'auto');
-      // // prettier-ignore
-      // ga('set', 'anonymizeIp', true);
-      // // prettier-ignore
-      // ga('set', 'transport', 'beacon');
-      // // prettier-ignore
-      // ga('send', 'pageview');
+      let ga;
+      window.ga = function () {
+        // eslint-disable-next-line prefer-rest-params
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      // prettier-ignore
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      // prettier-ignore
+      ga('set', 'anonymizeIp', true);
+      // prettier-ignore
+      ga('set', 'transport', 'beacon');
+      // prettier-ignore
+      ga('send', 'pageview');
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>

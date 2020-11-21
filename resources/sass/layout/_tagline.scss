@@ -1,0 +1,8 @@
+// Laying out tagline of the website
+.tagline {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+
+  letter-spacing: 2px;
+  font-size: 24px;
+}
